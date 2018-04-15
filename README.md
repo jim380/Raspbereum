@@ -28,4 +28,4 @@
 I am not a financial advisor. $OMG to the moon though. hint hint
 
 ---
-Let's get started: [Set Up RasPi:](pi_setup.md)
+Let's get started: [Set Up RasPi](pi_setup.md)
