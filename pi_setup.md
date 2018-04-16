@@ -26,9 +26,10 @@
 * Insert the microSD card into the computer (you might need a microSD card adapter for this)
 * Start Etcher program, and select the the microSD card you wish to flash the disk image file (either .img or .zip would work) to
 * Double check your hard drive selection, then hit "Flash"
+
 ![etcher](pics/pi_setup/1.jpg)
 
-Once finished, eject the microSD card and insert it into the Raspberry Pi. Plug in all the peripherals (i.e. display, mouse, keyboard etc.). Finally, plug in the power adapter and wait for the Pi to boot up. If everyting went well, you should be welcomed with the default Raspbian desktop on the screen.
+Once finished, eject the microSD card and insert it into the Raspberry Pi. Plug in all the peripherals (i.e. display, mouse, keyboard etc.). Finally, plug in the power adapter and wait for the Pi to boot up. If everyting went well, you should be welcomed with the default Raspbian desktop on the screen. You can now go ahead and set up wifi connection etc.
 
 ### 2) Access Remotely via SSH ###
 * Download the latest [Raspbian Stretch With Lite](https://www.raspberrypi.org/downloads/raspbian/) disk image
@@ -65,6 +66,10 @@ Lastly, we need to run an SSH client to remotely access the Pi with. Personlly I
 ![ssh1](pics/pi_setup/ssh1.jpg)
 ![ssh2](pics/pi_setup/ssh2.jpg)
 
+To test the internet connection on the Pi, run `ping cypher-core.com` in terminal. If you see pings, that means it's working.
+
+![ping](pics/pi_setup/ping.jpg)
+
 ## Configure the Pi
 **Here are a few settings you can configure to optimized the Pi for our use.**
 - Change user password
@@ -85,6 +90,7 @@ To access these menus, simply go to `Preferences -> Raspberry Pi Configuration` 
 ![config1](pics/pi_setup/config1.jpg) ![config2](pics/pi_setup/config2.jpg)
 
 If you are running the Pi "headless", type in `sudo raspi-config`.
+
 ![config3](pics/pi_setup/config3.jpg)
 
 ---
