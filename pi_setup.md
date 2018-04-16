@@ -60,7 +60,10 @@ Next, we want to assign the Pi a static IP address so that we don't have to cons
 * Change the last part of the Pi's IP address to any number in the range of 0-255 (e.g. `24` for pi_4) 
 ![router](pics/pi_setup/2.png)
 
-Lastly, we need to run an SSH client to remotely access the Pi with. Personlly I use [PuTTY](edgebase/finding-your-default-gateway/) on Windows. If you use Mac OS or Linux, first you will need to open up Terminal. Type in `ssh pi@ip_address` and hit Return key when finished. When asked for password, enter `raspberry` and you are in.
+Lastly, we need to run an SSH client to remotely access the Pi with. Personlly I use [PuTTY](edgebase/finding-your-default-gateway/) on Windows. If you use Mac OS or Linux, first you will need to open up Terminal. Type in `ssh pi@ip_address` and hit Return key when finished. When asked for password, enter `raspberry` and you will be in.
+
+![ssh1](pics/pi_setup/ssh1.jpg)
+![ssh2](pics/pi_setup/ssh2.jpg)
 
 
 
