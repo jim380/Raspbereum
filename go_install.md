@@ -31,3 +31,5 @@
 - `sudo apt remove golang`
 - `sudo apt-get autoremove`
 - `source .profile`
+
+Next: [Install Geth >>](geth_install.md)
