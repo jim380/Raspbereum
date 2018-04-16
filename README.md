@@ -27,5 +27,13 @@
 ### Disclaimer
 I am not a financial advisor. $OMG to the moon though. hint hint
 
+### Special thanks
+This tutorial would not have possible without these amazing people:
+- The Ethereum team (https://github.com/ethereum)
+- Raspnode (http://raspnode.com/)
+- Go Ethereum (https://geth.ethereum.org/)
+- Stadicus (https://github.com/Stadicus)
+- David Busby (https://gist.github.com/Oneiroi)
+<br/>and more 
 ---
 Let's get started: [Set Up RasPi](pi_setup.md)
