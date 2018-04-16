@@ -6,7 +6,7 @@
 **The account consists of an encrypted private key and the corresponding public key/address, all of which are stored in `~/.ethereum` by default**
 - `sudo su`
 - `geth account new`
-Enter a passphrase twice for your new account when asked. **Make sure to remember this passphrase!!!**
+<br/>Enter a passphrase twice for your new account when asked. **Make sure to remember this passphrase!!!**
 <br/>![3](pics/geth_run/3.jpg)
 ## Run Geth Console
 - `geth console`
