@@ -37,6 +37,35 @@ Once finished, eject the microSD card and insert it into the Raspberry Pi. Plug 
 * Start Etcher program, and select the the microSD card you wish to flash the disk image file (either .img or .zip would work) to
 * Double check your hard drive selection, then hit "Flash"
 
+**Now we need to establish SSH connection on the Pi**
+* Go to the root directory of the microSD card, and creat an empty file named `ssh` without a file extension. This will automatically enable ssh upon booting up.
+* Connect an ethernet cable to the Pi. If you wish to use wifi connection instead, create a file named `wpa_supplicant.conf` in the root directory of the microSD card, and write the following content:
+```
+country=US
+ctrl_interface=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+network={
+    ssid="SSID"
+    psk="passwrod"
+}
+```
+**Replace `US` with the ISO2 code of the country you are located in. You can look it up [here](https://www.iso.org/obp/ui/#search).**
+**Also replace `SSID` and `password` with your own wifi credentials**
+
+Once finished, eject the microSD card and insert it into the Raspberry Pi. Plug in the power adapter and wait for the Pi to boot up. If everyting went well, you should see one red led light staying on and one green led light flashing steadily.
+
+Next, we want to assign the Pi a static IP address so that we don't have to constantly change it for future SSH logins.
+* Access your router by following this [guide](http://www.noip.com/support/knowledgebase/finding-your-default-gateway/)
+* Find the corresponding menu for assigning static IP addresses
+* Change the last part of the Pi's IP address to any number in the range of 0-255 (e.g. `24` for pi_4) 
+![router](pics/pi_setup/2.png)
+
+Lastly, we need to run an SSH client to remotely access the Pi with. Personlly I use [PuTTY](edgebase/finding-your-default-gateway/) on Windows. If you use Mac OS or Linux, first you will need to open up Terminal. Type in `ssh pi@ip_address` and hit Return key when finished. When asked for password, enter `raspberry` and you are in.
+
+
+
+
+
 
 
 ---
