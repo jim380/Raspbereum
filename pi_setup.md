@@ -2,7 +2,7 @@
 [ [Intro](README.md) ] -- [ **Set Up RasPi** ] -- [ [Install Go](go_install.md) ] -- [ [Install Geth](geth_install.md) ] -- [ [Run Geth](geth_run.md) ] -- [ [Updates](raspi_updates.md) ]
 
 -----
-## Download and Load Raspbian Disk image onto the microSD card
+## Download and Load Raspbian disk image; Establish connection to the Pi
 **Before proceeding to the next step, you first need to decide how you want to access your Pi for the intial setup process.**
 1) Access locally. You will need the following thing(s):
     - a display
@@ -65,11 +65,27 @@ Lastly, we need to run an SSH client to remotely access the Pi with. Personlly I
 ![ssh1](pics/pi_setup/ssh1.jpg)
 ![ssh2](pics/pi_setup/ssh2.jpg)
 
+## Configure the Pi
+**Here are a few settings you can configure to optimized the Pi for our use.**
+- Change user password
+- Change Host name
+- Manage network connections
+- Update configuration tools
+- Boot options 
+    * -> Desktop / CLI -> CLI
+    * -> wait for network to boot
+- Localisation
+- Overclock
+- Advanced options 
+    * -> Expand Filesystem
+    * -> set Memory Split to `16`
 
+To access these menus, simply go to `Preferences -> Raspberry Pi Configuration` if you are accessing the Pi via a display.
 
+![config1](pics/pi_setup/config1.jpg) ![config2](pics/pi_setup/config2.jpg)
 
-
-
+If you are running the Pi "headless", type in `sudo raspi-config`.
+![config3](pics/pi_setup/config3.jpg)
 
 ---
 
