@@ -3,7 +3,7 @@
 
 -----
 ## Build Geth from source code
-Since we already hace Go installed, we can easily bulid Geth by running the following commands:
+Since we already have Go installed, we can easily bulid Geth by running the following commands:
 - Download the project. Also checkout the default version of Go Ethereum into local `GOPATH` work space
   <br/>`sudo go get -d github.com/ethereum/go-ethereum`
 - Build executables<br/>`go install github.com/ethereum/go-ethereum/cmd/geth`
