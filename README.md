@@ -35,5 +35,11 @@ This tutorial would not have possible without these amazing people:
 - Stadicus (https://github.com/Stadicus)
 - David Busby (https://gist.github.com/Oneiroi)
 <br/>and more 
+
+### If I helped you, give me a handshake on Twitter @jim380. Or if you want to tip me,
+BTC: 1D5eE8FVF5R4JcvSArh4s1UiVnuwvp3j8R
+<br/>0xfb0f38F077E13F72eBf8248F03866743355A146B
+
+
 ---
 Let's get started: [Set Up RasPi](pi_setup.md)
