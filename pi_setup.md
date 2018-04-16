@@ -50,13 +50,13 @@ network={
     psk="passwrod"
 }
 ```
-**Replace `US` with the ISO2 code of the country you are located in. You can look it up [here](https://www.iso.org/obp/ui/#search).**
+**Replace `US` with the ISO Alpha-2 code of the country you are located in. You can look it up [here](http://www.nationsonline.org/oneworld/country_code_list.htm).**
 **Also replace `SSID` and `password` with your own wifi credentials**
 
 Once finished, eject the microSD card and insert it into the Raspberry Pi. Plug in the power adapter and wait for the Pi to boot up. If everyting went well, you should see one red led light staying on and one green led light flashing steadily.
 
 Next, we want to assign the Pi a static IP address so that we don't have to constantly change it for future SSH logins.
-* Access your router by following this [guide](http://www.noip.com/support/knowledgebase/finding-your-default-gateway/)
+* Access your router by following this [guide](https://wiki.amahi.org/index.php/Find_Your_Gateway_IP)
 * Find the corresponding menu for assigning static IP addresses
 * Change the last part of the Pi's IP address to any number in the range of 0-255 (e.g. `24` for pi_4) 
 ![router](pics/pi_setup/2.png)
