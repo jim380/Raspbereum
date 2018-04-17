@@ -6,4 +6,4 @@
 
 
 -----
-Next: [Updates >>](update.md)
+Next: [Updates >>](updates.md)
