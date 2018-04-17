@@ -1,5 +1,5 @@
 # Install Geth
-[ [Intro](README.md) ] -- [ [Set Up RasPi](pi_setup.md) ] -- [ [Install Go](go_install.md) ] -- [ **Install Geth** ]  -- [ [Run Geth](geth_run.md) ] -- [ [Updates](raspi_updates.md) ]
+[ [Intro](README.md) ] -- [ [Set Up RasPi](pi_setup.md) ] -- [ [Install Go](go_install.md) ] -- [ **Install Geth** ]  -- [ [Run Geth](geth_run.md) ] -- [ [FAQ](faq.md) ] -- [ [Updates](raspi_updates.md) ]
 
 -----
 ## Build Geth from source code
