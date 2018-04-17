@@ -22,5 +22,6 @@ Alternatively, you can install Geth directly via PPAs (Personal Package Archives
 - `sudo su`
 - `geth version`
 <br/>![1](pics/geth_install/1.jpg)
+-----
 
 Next: [Run Geth >>](geth_run.md)
