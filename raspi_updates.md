@@ -4,4 +4,4 @@
 -----
 ### 04/16/2018
 - `FAQ` section added
-- Switched to Geth "fast sync" algorithm for faster blockchain synchronization
+- `Run Geth`: switched to Geth "fast sync" algorithm for faster blockchain synchronization
