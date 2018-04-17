@@ -1,5 +1,5 @@
 # Run Geth
-[ [Intro](README.md) ] -- [ [Set Up RasPi](pi_setup.md) ] -- [ [Install Go](go_install.md) ] -- [ [Install Geth](geth_install.md) ] -- [ **Run Geth** ]   -- [ [Updates](raspi_updates.md) ]
+[ [Intro](README.md) ] -- [ [Set Up RasPi](pi_setup.md) ] -- [ [Install Go](go_install.md) ] -- [ [Install Geth](geth_install.md) ] -- [ **Run Geth** ]   -- [ [FAQ](faq.md) ] -- [ [Updates](raspi_updates.md) ]
 
 -----
 ## Create a new account
@@ -28,3 +28,5 @@ This will give you current block number, and the highest block number being repo
 **In case where the blockchain database got corrupted, you would have to rebuild the block index. To do this, delete the blockchain data and start over. To avoid such headaches, I recommend downloading the whole blockchain onto a hard drive on a computer first, then copy the `chaindata` folder over onto the Pi.**
 
 **If you have any questions, please reach out to me on Twitter @jim380, or on Telegram @jim380. Thank you very much for checking out.**
+-----
+Next: [FAQ >>](faq.md)
