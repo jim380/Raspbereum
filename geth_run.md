@@ -8,8 +8,8 @@
 - `geth account new`
 <br/>Enter a passphrase twice for your new account when asked. **Make sure to remember this passphrase!!!**
 <br/>![3](pics/geth_run/3.jpg)
-## Run Geth Console
-- `geth console`
+## Start syncing with the blockchain
+- "fast sync" algorithm which syncs pruned blockchain data<br/>`geth --syncmode=fast --cache=1024`
 
 After running this command, you should see messages as shown in the pic below.
 <br/>![4](pics/geth_run/4.jpg)
