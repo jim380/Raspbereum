@@ -6,4 +6,4 @@
 
 
 -----
-Next: [Updates >>](updates.md)
+Next: [Updates >>](raspi_update.md)
