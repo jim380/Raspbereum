@@ -36,8 +36,6 @@
 - `$ go env`
 
   <br/>![check_installation](pics/go_install/check_installation.jpg)
-**Some screenshots for reference.**
-
 ## Unstall Golang
 - `$ sudo apt remove golang`
 - `$ sudo apt-get autoremove`
