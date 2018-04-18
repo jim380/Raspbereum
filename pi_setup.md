@@ -2,6 +2,10 @@
 [ [Intro](README.md) ] -- [ **Set Up RasPi** ] -- [ [Install Go](go_install.md) ] -- [ [Install Geth](geth_install.md) ] -- [ [Run Geth](geth_run.md) ] -- [ [FAQ](faq.md) ] -- [ [Updates](raspi_updates.md) ]
 
 -----
+## Remarks regarding using the command line
+- Every command in this guide starts with a $ sign. You don't actually have to type the $ sign into the command line.
+- While using the Nano text editor, press `ctrl+o`then`Enter`to save or `ctrl+x` to exit.
+- To read more on Linux command line, check out this [article](https://www.computerworld.com/article/2598082/linux/linux-linux-command-line-cheat-sheet.html)
 ## Download and Load Raspbian disk image; Establish connection to the Pi
 **Before proceeding to the next step, you first need to decide how you want to access your Pi for the intial setup process.**
 1) Access locally. You will need the following thing(s):
