@@ -12,20 +12,31 @@
 - `sudo apt-get install libgmp3-dev -y`
 ## Install Golang 1.10 (latest release at the time of writing this tutorial)
 - Download the archive<br/>`wget https://storage.googleapis.com/golang/go1.10.linux-armv6l.tar.gz`
+<br/>![download](pics/go_install/download.jpg)
+
 - Extract it into /usr/local, creating a Go tree in /usr/local/go<br/>`sudo tar -C /usr/local -xvf go1.10.linux-armv6l.tar.gz`
-- Load into current shell session<br/>`cat >> ~/.bashrc << 'EOF'`
-   <br/>`export GOPATH=$HOME/go`
-   <br/>`export PATH=/usr/local/go/bin:$PATH:$GOPATH/bin`
-   <br/>`EOF`
-- Run ~/.bashrc<br/>`source ~/.bashrc`
+<br/>![tar](pics/go_install/tar.jpg)
+
+- Change owner to root, and change permissions<br/>`sudo chown root:root /usr/local/go`<br/>`sudo chmod 755 /usr/local/go`
+<br/>![permission](pics/go_install/permission.png)
+
+- Create a workspace folder<br/>`mkdir <workspace_name>{,/bin,/pkg,/src}`<br/>*name it whatever you want, here I just named it `workspace`*
+<br/>![workspace](pics/go_install/workspace.jpg)
+
+- Set environment variables<br/>`nano /etc/profile`<br/>Add`export PATH=$PATH:/usr/local/go/bin`at the end of the file. Press `ctrl+X` to save and exit.
+<br/>![path_1](pics/go_install/path_1.jpg)
+
+  <br/>`cd`
+  <br/>`nano .profile`<br/>Add `export GOPATH=$HOME/<workspace_name>`and`export PATH=$HOME/<workspace_name>/bin:$PATH`at the end of the   file. Press `ctrl+X` to save and exit.
+  <br/>![path_2](pics/go_install/path_2.jpg)
+  
 - Reboot<br/>`sudo shutdown -r now` 
 ## Test if Go is correctly installed and working
-- `sudo su`
 - `go version`
+- `go env`
+  <br/>![check_installation](pics/go_install/check_installation.jpg)
 
 **Some screenshots for reference.**
-<br/>![2](pics/go_install/2.jpg)
-![3](pics/go_install/3.jpg)
 
 ## Unstall Golang
 - `sudo apt remove golang`
