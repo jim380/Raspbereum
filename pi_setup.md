@@ -61,12 +61,12 @@ Next, we want to assign the Pi a static IP address so that we don't have to cons
 * Change the last part of the Pi's IP address to any number in the range of 0-255 (e.g. `24` for pi_4) 
 ![router](pics/pi_setup/2.png)
 
-Lastly, we need to run an SSH client to remotely access the Pi with. Personlly I use [PuTTY](edgebase/finding-your-default-gateway/) on Windows. If you use Mac OS or Linux, first you will need to open up Terminal. Type in `ssh pi@ip_address` and hit Return key when finished. When asked for password, enter `raspberry` and you will be in.
+Lastly, we need to run an SSH client to remotely access the Pi with. Personlly I use [PuTTY](edgebase/finding-your-default-gateway/) on Windows. If you use Mac OS or Linux, first you will need to open up Terminal. Run `$ ssh pi@ip_address` and hit Return key when finished. When asked for password, enter `raspberry` and you will be in.
 
 ![ssh1](pics/pi_setup/ssh1.jpg)
 ![ssh2](pics/pi_setup/ssh2.jpg)
 
-To test the internet connection on the Pi, run `ping cypher-core.com` in terminal. If you see pings, that means it's working.
+To test the internet connection on the Pi, run `$ ping cypher-core.com` in terminal. If you see pings, that means it's working.
 
 ![ping](pics/pi_setup/ping.jpg)
 
@@ -89,7 +89,7 @@ To access these menus, simply go to `Preferences -> Raspberry Pi Configuration` 
 
 ![config1](pics/pi_setup/config1.jpg) ![config2](pics/pi_setup/config2.jpg)
 
-If you are running the Pi "headless", type in `sudo raspi-config`.
+If you are running the Pi "headless", type in `$ sudo raspi-config`.
 
 ![config3](pics/pi_setup/config3.jpg)
 
