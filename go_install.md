@@ -23,12 +23,16 @@
 - Create a workspace folder, and 3 sub-folders inside it<br/>`$ mkdir <workspace_name>{,/bin,/pkg,/src}`<br/>*name it whatever you want, here I just named it `workspace`*
 <br/>![workspace](pics/go_install/workspace.jpg)
 
-- Set environment variables<br/>`$ nano /etc/profile`<br/>Add`export PATH=$PATH:/usr/local/go/bin`at the end of the file. Press `ctrl+X` to save and exit.
+- Set environment variables
+<br/>~ open up the file: `$ nano /etc/profile`
+<br/>~ add this line to at the end of the file: `export PATH=$PATH:/usr/local/go/bin`
 <br/>![path_1](pics/go_install/path_1.jpg)
-
-  <br/>`$ cd`
-  <br/>`$ nano .profile`<br/>Add `export GOPATH=$HOME/<workspace_name>`and`export PATH=$HOME/<workspace_name>/bin:$PATH`at the end of the   file. Press `ctrl+X` to save and exit. 
-  <br/>![path_2](pics/go_install/path_2.jpg)
+<br/>`$ cd`
+<br/>~ open up the file:`$ nano .profile`
+<br/>~ add the following lines at the end of the file:
+<br/>`export GOPATH=$HOME/<workspace_name>`
+<br/>`export PATH=$HOME/<workspace_name>/bin:$PATH`
+<br/>![path_2](pics/go_install/path_2.jpg)
   
 - Reboot<br/>`$ sudo shutdown -r now` 
 ## Test if Go is correctly installed and working
