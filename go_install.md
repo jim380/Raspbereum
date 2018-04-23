@@ -38,8 +38,8 @@
 ## Test if Go is correctly installed and working
 - `$ go version`
 - `$ go env`
+<br/>![check_installation](pics/go_install/check_installation.jpg)
 
-  <br/>![check_installation](pics/go_install/check_installation.jpg)
 ## Unstall Golang
 - `$ sudo apt remove golang`
 - `$ sudo apt-get autoremove`
