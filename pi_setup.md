@@ -6,7 +6,7 @@
 - Every command in this guide starts with a $ sign. You don't actually have to type the $ sign into the command line.
 - While using the Nano text editor, press `ctrl+o`then`Enter`to save or `ctrl+x` to exit.
 - To read more on Linux command line, check out this [article](https://www.computerworld.com/article/2598082/linux/linux-linux-command-line-cheat-sheet.html)
-## Download and Load Raspbian disk image; Establish connection to the Pi
+## Download and load Raspbian disk image; Establish connection to the Pi
 **Before proceeding to the next step, you first need to decide how you want to access your Pi for the intial setup process.**
 1) Access locally. You will need the following thing(s):
     - a display
@@ -96,6 +96,43 @@ To access these menus, simply go to `Preferences -> Raspberry Pi Configuration` 
 If you are running the Pi "headless", type in `$ sudo raspi-config`.
 
 ![config3](pics/pi_setup/config3.jpg)
+
+## Mount an external hard drive, and move the "swap file" onto it
+SD card failure is a common issue people encounter in projects. To prevent that, we can move the "swap file" onto an external drive so that the SD card doesn't degrade too quickly.
+- Identify the external hard drive
+<br/>`$ lsblk -o UUID,NAME,FSTYPE,SIZE,LABEL,MODEL`
+![1](pics/hdd_mount/1.jpg)
+
+- Formoat external hard drive to Ext4
+<br/>`$ sudo mkfs.ext4 /dev/[NAME]`
+<br/>![2](pics/hdd_mount/2.jpg)
+
+- Edit the `fstab` file
+<br/>~ open up the file: `$ sudo nano /etc/fstab`
+<br/>~ add this line at the end of the file: `UUID=[YOUR_UUID] /mnt/hdd ext4 noexec,defaults 0 0`
+<br/>![3](pics/hdd_mount/3.jpg)
+
+- Create a directory for the hard drive we formatted
+<br/>`$ sudo mkdir /mnt/hdd`
+
+- Check if `/mnt/hdd` is correctly mounted
+<br/>`$ sudo mount -a`
+<br/>`$ df /mnt/hdd`
+<br/>![4](pics/hdd_mount/4.jpg)
+
+- Edit the "swap file"
+<br/>~ open up the file: `$ sudo nano /etc/dphys-swapfile`
+<br/>~ add the following lines at the end of the file:
+<br/>`CONF_SWAPFILE=/mnt/hdd/swapfile`
+<br/>`CONF_SWAPSIZE=1000`
+<br/>![5](pics/hdd_mount/5.jpg)
+
+- Delete old "swap file", and enable the new one
+<br/>`$ sudo dphys-swapfile swapoff`
+<br/>`$ sudo rm /var/swap`
+<br/>`$ sudo dphys-swapfile setup`
+<br/>`$ sudo dphys-swapfile swapon`
+<br/>![6](pics/hdd_mount/6.jpg)
 
 ---
 
