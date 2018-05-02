@@ -2,6 +2,7 @@
 [ **Intro** ] -- [ [Set Up RasPi](pi_setup.md) ] -- [ [Install Go](go_install.md) ] -- [ [Install Geth](geth_install.md) ] -- [ [Run Geth](geth_run.md) ] -- [ [FAQ](faq.md) ] -- [ [Updates](raspi_updates.md) ]
 
 -----
+<br/>![header 1](pics/header/header_1.jpg)
 ## Why run an Ethereum node?
 - Help out the Ethereum network (Though I personally believe there are already enough nodes for network security, the network will need more nodes to support light clients (e.g. digital wallets) and just to have more node redundancy)
 - Instead of connecting to another node using RPC connection, you have direct access to Ethereum blockchain by running a node
