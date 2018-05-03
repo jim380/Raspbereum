@@ -6,6 +6,7 @@
 - `Set Up RasPi`
 <br/>~ `Added:`use an external hard drive for storing the blockchain data 
 <br/>~ `Added:`mount external hard drive; create a directory under `/mnt/hdd` for the blockchain data
+- `Run Geth`
 <br/>~ `Modified:`various Geth commands
 ### 04/17/2018
 - `Install Go`
