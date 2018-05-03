@@ -4,12 +4,11 @@
 -----
 ## Create a new account
 **The account consists of an encrypted private key and the corresponding public key/address, all of which are stored in `~/.ethereum` by default**
-- `sudo su`
-- `geth account new`
+- `geth --datadir /mnt/hdd/eth_data account new`
 <br/>Enter a passphrase twice for your new account when asked. **Make sure to remember this passphrase!!!**
 <br/>![3](pics/geth_run/3.jpg)
 ## Start syncing with the blockchain
-- "fast sync" algorithm which syncs pruned blockchain data<br/>`geth --syncmode=fast --cache=1024`
+- "fast sync" algorithm which syncs pruned blockchain data<br/>`geth --datadir /mnt/hdd/eth_data --syncmode=fast --cache=1024`
 
 After running this command, you should see messages as shown in the pic below.
 <br/>![4](pics/geth_run/4.jpg)
