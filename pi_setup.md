@@ -105,13 +105,13 @@ For this step, you can use either a pre-formatted hard drive or an existing hard
 - Identify the partition; install NTFS dependency 
 <br/>`$ lsblk -o UUID,NAME,FSTYPE,SIZE,LABEL,MODEL`
 <br/>`$ sudo apt-get install ntfs-3g`
-![1](pics/hdd_mount/1.jpg)
+<br/>![1](pics/hdd_mount/1.jpg)
 
 - Edit the `fstab` file
 <br/>~ open up the file: `$ sudo nano /etc/fstab`
 <br/>~ add this line at the end of the file: `UUID=[YOUR_UUID] /mnt/hdd ntfs defaults,auto,umask=002,gid=bitcoin,users,rw 0 0`
 <br/>![2](pics/hdd_mount/2.jpg)
-here I'm using the `sda2` partition
+<br/> Here I'm using the `sda2` partition
 
 - Create a directory for the hard drive we formatted
 <br/>`$ sudo mkdir /mnt/hdd`
