@@ -17,4 +17,4 @@
 - `FAQ`
 <br/>~ `Added:`new section
 - `Run Geth`
-<br/>~ `Added:`use Geth "fast sync" algorithm for faster blockchain synchronization
+<br/>~ `Modified:`use Geth "fast sync" algorithm for faster blockchain synchronization
