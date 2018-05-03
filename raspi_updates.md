@@ -2,9 +2,11 @@
 [ [Intro](README.md) ] -- [ [Set Up RasPi](pi_setup.md) ] -- [ [Install Go](go_install.md) ] -- [ [Install Geth](geth_install.md) ] -- [ [Run Geth](geth_run.md) ] -- [ [FAQ](faq.md) ] -- [ **Updates** ]   
 
 -----
-### 04/22/2018
+### 05/03/2018
 - `Set Up RasPi`
-<br/>~ `Added:`mount external hard drives, and move "swap file" onto them 
+<br/>~ `Added:`use an external hard drive for storing the blockchain data 
+<br/>~ `Added:`mount external hard drive; create a directory under `/mnt/hdd` for the blockchain data
+<br/>~ `Modified:`various Geth commands
 ### 04/17/2018
 - `Install Go`
 <br/>~ `Added:`give owner root access to `/usr/local/go`
