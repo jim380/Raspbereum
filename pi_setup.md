@@ -121,6 +121,18 @@ For this step, you can use either a pre-formatted hard drive or an existing hard
 <br/>`$ df /mnt/hdd`
 <br/>![3](pics/hdd_mount/3.jpg)
 
+- Set the owner of `/mnt/hdd`
+<br/>`$ sudo chown -R pi:pi /mnt/hdd/`
+
+- Creat a directory for Ethereum blockchain data
+<br/>`$ cd /mnt/hdd/`
+<br/>`$ mkdir eth_data`
+<br/>`$ ls -la`
+<br/>![7](pics/hdd_mount/7.jpg)
+
+- Go back to `/home/pi`
+<br/>`$ cd`
+
 SD card failure is a common issue people encounter in projects. To prevent that, we can move the "swap file" onto an external drive so that the SD card doesn't degrade too quickly.
 
 - Edit the "swap file"
