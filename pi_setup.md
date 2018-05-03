@@ -15,11 +15,13 @@
     - a wired mouse or a wireless mouse w/ a receiver
     - a wired keyword or a wireless keyboard (w/ a receiver or bluetooth)
     - a comupter to write the disk image to microSD card with
+    - an external hard drive for storing blockchain data (ideally 500GB+)
 
 2) Access remotely (via SSH) aka "headless". You will need the following thing(s):
     - a computer to write the disk image to microSD card with, and to run Secure Shell (SSH) client on
     - assuming the computer has all necessary peripherals i.e. mouse, keyboard
     - an ethernet cable (optional, you can also use wifi)
+    - an external hard drive for storing blockchain data (ideally 500GB+)
 
 **For this tutorial, I set up mine locally and used a VNC Viewer to access the Pi remotely from my main PC.**
 
@@ -97,19 +99,17 @@ If you are running the Pi "headless", type in `$ sudo raspi-config`.
 
 ![config3](pics/pi_setup/config3.jpg)
 
-## Mount an external hard drive, and move the "swap file" onto it
-SD card failure is a common issue people encounter in projects. To prevent that, we can move the "swap file" onto an external drive so that the SD card doesn't degrade too quickly.
-- Identify the external hard drive
-<br/>`$ lsblk -o UUID,NAME,FSTYPE,SIZE,LABEL,MODEL`
-![1](pics/hdd_mount/1.jpg)
+## Mount external hard drive; Move "swap file"
+For this step, you can use either a pre-formatted hard drive or an existing hard hard that contains data. If you need to format an existing hard drive, use any tool you prefer just make sure you format it with **NTFS**. Once the hard drive is ready, simply plug it into the pi.
 
-- Formoat external hard drive to Ext4
-<br/>`$ sudo mkfs.ext4 /dev/[NAME]`
-<br/>![2](pics/hdd_mount/2.jpg)
+- Identify the partition; install NTFS dependency 
+<br/>`$ lsblk -o UUID,NAME,FSTYPE,SIZE,LABEL,MODEL`
+<br/>`$ sudo apt-get install ntfs-3g`
+![1](pics/hdd_mount/1.jpg)
 
 - Edit the `fstab` file
 <br/>~ open up the file: `$ sudo nano /etc/fstab`
-<br/>~ add this line at the end of the file: `UUID=[YOUR_UUID] /mnt/hdd ext4 noexec,defaults 0 0`
+<br/>~ add this line at the end of the file: `UUID=[YOUR_UUID] /mnt/hdd ntfs defaults,auto,umask=002,gid=bitcoin,users,rw 0 0`
 <br/>![3](pics/hdd_mount/3.jpg)
 
 - Create a directory for the hard drive we formatted
@@ -119,6 +119,8 @@ SD card failure is a common issue people encounter in projects. To prevent that,
 <br/>`$ sudo mount -a`
 <br/>`$ df /mnt/hdd`
 <br/>![4](pics/hdd_mount/4.jpg)
+
+SD card failure is a common issue people encounter in projects. To prevent that, we can move the "swap file" onto an external drive so that the SD card doesn't degrade too quickly.
 
 - Edit the "swap file"
 <br/>~ open up the file: `$ sudo nano /etc/dphys-swapfile`
