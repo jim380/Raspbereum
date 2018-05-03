@@ -4,7 +4,8 @@
 -----
 ## Create a new account
 **The account consists of an encrypted private key and the corresponding public key/address, all of which are stored in `~/.ethereum` by default**
-- `geth --datadir /mnt/hdd/eth_data account new`
+- Create a new account
+<br/>`geth --datadir /mnt/hdd/eth_data account new`
 <br/>Enter a passphrase twice for your new account when asked. **Make sure to remember this passphrase!!!**
 <br/>![3](pics/geth_run/3.jpg)
 ## Start syncing with the blockchain
