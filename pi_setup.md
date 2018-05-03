@@ -113,7 +113,7 @@ For this step, you can use either a pre-formatted hard drive or an existing hard
 <br/>~ add this line at the end of the file:`UUID=[YOUR_UUID] /mnt/hdd ntfs defaults,auto,umask=002,gid=bitcoin,users,rw 0 0`
 <br/>![2](pics/hdd_mount/2.jpg)
 
-- Create a directory for the hard drive we formatted
+- Create a directory for the hard drive
 <br/>`$ sudo mkdir /mnt/hdd`
 
 - Check if `/mnt/hdd` is correctly mounted
