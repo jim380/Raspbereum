@@ -137,7 +137,7 @@ SD card failure is a common issue people encounter in projects. To prevent that,
 
 - Edit the "swap file"
 <br/>~ open up the file: `$ sudo nano /etc/dphys-swapfile`
-<br/>~ Modify the following lines as shown:
+<br/>~ modify the following lines as shown:
 <br/>`CONF_SWAPFILE=/mnt/hdd/swapfile`
 <br/>`CONF_SWAPSIZE=1000`
 <br/>![4](pics/hdd_mount/4.jpg)
