@@ -24,11 +24,11 @@
 <br/>![workspace](pics/go_install/workspace.jpg)
 
 - Set environment variables
-<br/>~ open up the file: `$ nano /etc/profile`
+<br/>~ open up the file: `$ sudo nano /etc/profile`
 <br/>~ add this line to at the end of the file: `export PATH=$PATH:/usr/local/go/bin`
 <br/>![path_1](pics/go_install/path_1.jpg)
 <br/>`$ cd`
-<br/>~ open up the file:`$ nano .profile`
+<br/>~ open up the file:`$ sudo nano .profile`
 <br/>~ add the following lines at the end of the file:
 <br/>`export GOPATH=$HOME/<workspace_name>`
 <br/>`export PATH=$HOME/<workspace_name>/bin:$PATH`
