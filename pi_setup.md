@@ -110,7 +110,8 @@ For this step, you can use either a pre-formatted hard drive or an existing hard
 - Edit the `fstab` file
 <br/>~ open up the file: `$ sudo nano /etc/fstab`
 <br/>~ add this line at the end of the file: `UUID=[YOUR_UUID] /mnt/hdd ntfs defaults,auto,umask=002,gid=bitcoin,users,rw 0 0`
-<br/>![3](pics/hdd_mount/3.jpg)
+<br/>![2](pics/hdd_mount/2.jpg)
+here I'm using the `sda2` partition
 
 - Create a directory for the hard drive we formatted
 <br/>`$ sudo mkdir /mnt/hdd`
@@ -118,16 +119,16 @@ For this step, you can use either a pre-formatted hard drive or an existing hard
 - Check if `/mnt/hdd` is correctly mounted
 <br/>`$ sudo mount -a`
 <br/>`$ df /mnt/hdd`
-<br/>![4](pics/hdd_mount/4.jpg)
+<br/>![3](pics/hdd_mount/3.jpg)
 
 SD card failure is a common issue people encounter in projects. To prevent that, we can move the "swap file" onto an external drive so that the SD card doesn't degrade too quickly.
 
 - Edit the "swap file"
 <br/>~ open up the file: `$ sudo nano /etc/dphys-swapfile`
-<br/>~ add the following lines at the end of the file:
+<br/>~ Modify the following lines as shown:
 <br/>`CONF_SWAPFILE=/mnt/hdd/swapfile`
 <br/>`CONF_SWAPSIZE=1000`
-<br/>![5](pics/hdd_mount/5.jpg)
+<br/>![4](pics/hdd_mount/4.jpg)
 
 - Delete old "swap file", and enable the new one
 <br/>`$ sudo dphys-swapfile swapoff`
