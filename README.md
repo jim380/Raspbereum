@@ -1,4 +1,4 @@
-# How To Run Your Own Ethereum Node On Raspberry Pi
+# How to Run Your Own Ethereum Node on A Raspberry Pi
 [ **Intro** ] -- [ [Set Up RasPi](pi_setup.md) ] -- [ [Install Go](go_install.md) ] -- [ [Install Geth](geth_install.md) ] -- [ [Run Geth](geth_run.md) ] -- [ [FAQ](faq.md) ] -- [ [Updates](raspi_updates.md) ]
 
 -----
