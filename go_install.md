@@ -4,8 +4,7 @@
 -----
 ## Install security patches and application updates
 - `$ sudo apt-get update`
-- `$ sudo apt-get update -y`
-- `$ sudo apt-get upgrade`
+- `$ sudo apt-get upgrade -y`
 - `$ sudo apt-get install htop git curl bash-completion jq`
 <br/>**perform thecommands above regularly to make sure the system is always up-to-date**
 ## Install dependencies
