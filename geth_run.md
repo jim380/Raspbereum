@@ -18,8 +18,8 @@ After running this command, you should see messages as shown in the pic below.
 This will give you current block number, and the highest block number being reported by your peers.
 
 - To stop geth console<br/> `exit`
-## Run Geth in the backgrouod (optional)
-- `geth --datadir /mnt/hdd/eth_data --verbosity 0 &`
+## OPTIONAL: Run Geth in the backgrouod (setting logging verbosity to 0)
+- `geth --datadir /mnt/hdd/eth_data --verbosity 0`
 
 ### Find all Geth commands [here](https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options)
 
