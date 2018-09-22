@@ -13,7 +13,7 @@
 - Download the archive<br/>`$ wget https://dl.google.com/go/go1.11.linux-armv6l.tar.gz`
 <br/>![download](pics/go_install/download.jpg)
 
-- Extract it into /usr/local, creating a Go tree in /usr/local/go<br/>`$ sudo tar -C /usr/local -xvf go1.10.linux-armv6l.tar.gz`
+- Extract it into /usr/local, creating a Go tree in /usr/local/go<br/>`$ sudo tar -C /usr/local -xvf go1.11.linux-armv6l.tar.gz`
 <br/>![tar](pics/go_install/tar.jpg)
 
 - Change owner to root, and change permissions<br/>`$ sudo chown root:root /usr/local/go`<br/>`$ sudo chmod 755 /usr/local/go`
