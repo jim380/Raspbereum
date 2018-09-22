@@ -9,8 +9,8 @@
 <br/>**perform thecommands above regularly to make sure the system is always up-to-date**
 ## Install dependencies
 - `$ sudo apt-get install libgmp3-dev -y`
-## Install Golang 1.10 (latest release at the time of writing this tutorial)
-- Download the archive<br/>`$ wget https://storage.googleapis.com/golang/go1.10.linux-armv6l.tar.gz`
+## Install Golang 1.11 (latest release at the time of writing this tutorial)
+- Download the archive<br/>`$ wget https://dl.google.com/go/go1.11.linux-armv6l.tar.gz`
 <br/>![download](pics/go_install/download.jpg)
 
 - Extract it into /usr/local, creating a Go tree in /usr/local/go<br/>`$ sudo tar -C /usr/local -xvf go1.10.linux-armv6l.tar.gz`
