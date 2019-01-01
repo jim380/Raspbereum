@@ -2,12 +2,10 @@
 [ [Intro](README.md) ] -- [ [Set Up RasPi](pi_setup.md) ] -- [ **Install Go** ] -- [ [Install Geth](geth_install.md) ] -- [ [Run Geth](geth_run.md) ] -- [ [FAQ](faq.md) ] -- [ [Updates](raspi_updates.md) ]
 
 -----
-## Install security patches and application updates
+## Preparation
 - `$ sudo apt-get update`
 - `$ sudo apt-get upgrade -y`
 - `$ sudo apt-get install htop git curl bash-completion jq`
-<br/>**perform thecommands above regularly to make sure the system is always up-to-date**
-## Install dependencies
 - `$ sudo apt-get install libgmp3-dev -y`
 ## Install Golang 1.11 (latest release at the time of writing this tutorial)
 - Download the archive<br/>`$ wget https://dl.google.com/go/go1.11.linux-armv6l.tar.gz`
