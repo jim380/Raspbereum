@@ -21,13 +21,14 @@ This will give you current block number, and the highest block number being repo
 ## OPTIONAL: Run Geth in the backgrouod (setting logging verbosity to 0)
 - `geth --datadir /mnt/hdd/eth_data --verbosity 0`
 
-### Find all Geth commands [here](https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options)
+Find all Geth commands [here](https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options)
 
-**Block synchronisation takes a few days so please be patient. Also expect hiccups while the node is catching up with the blocks. Imports might occasionally stop. Sometimes you might even run into runtime errors. During these times you will need to stop and restart the node.**
+## Sidenotes
+- Block synchronisation takes a few days so please be patient. Also expect hiccups while the node is catching up with the blocks. Imports might occasionally stop. Sometimes you might even run into runtime errors. During these times you will need to stop and restart the node.
 
-**In case where the blockchain database got corrupted, you would have to rebuild the block index. To do this, delete the blockchain data and start over. To avoid such headaches, I recommend downloading the whole blockchain onto a hard drive on a computer first, then copy the `chaindata` folder over onto the Pi.**
+- In case where the blockchain database got corrupted, you would have to rebuild the block index. To do this, delete the blockchain data and start over. To avoid such headaches, I recommend downloading the whole blockchain onto a hard drive on a computer first, then copy the `chaindata` folder over onto the Pi.
 
-**If you have any questions, please reach out to me on Twitter @jim380, or on Telegram @jim380. Thank you very much for checking out.**
+- If you have any questions, please reach out to me on Twitter @jim380, or on Telegram @jim380. Thank you very much for checking out.
 
 -----
 Next: [FAQ >>](faq.md)
