@@ -7,7 +7,8 @@
 - `$ sudo apt-get upgrade -y`
 - `$ sudo apt-get install htop git curl bash-completion jq`
 - `$ sudo apt-get install libgmp3-dev -y`
-## Install Golang 1.11 (latest release at the time of writing this tutorial)
+## Install Golang
+Run this [bash](https://github.com/jim380/node_tooling/blob/master/Cosmos/CLI/go_install.sh) script if you feel lazy. Otherwise, proceed. 
 - Download the archive<br/>`$ wget https://dl.google.com/go/go1.11.linux-armv6l.tar.gz`
 <br/>![download](pics/go_install/download.jpg)
 
