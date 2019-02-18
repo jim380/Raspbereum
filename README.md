@@ -26,7 +26,7 @@
 5. [Run Geth:](geth_run.md) run Geth client, and learn Geth commands
 6. [Updates:](raspi_updates.md) keep track of changes
 ### Disclaimer
-Not a financial advisor. [Cypher Core](http://cyphercore.io) moon though. *hint hint*
+Not a financial advisor. [Cypher Core](http://cyphercore.io) to the moon though. *hint hint*
 
 ### Special thanks
 This tutorial would not have possible without these amazing people:
